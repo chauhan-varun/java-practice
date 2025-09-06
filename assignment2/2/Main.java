@@ -1,11 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        // Create students
         Student s1 = new Student("S101", "Alice");
         Student s2 = new Student("S102", "Bob");
         Student s3 = new Student("S103", "Charlie");
 
-        // Add grades
         s1.addGrade("Math", 'A');
         s1.addGrade("Physics", 'B');
         s2.addGrade("Math", 'C');
@@ -13,29 +11,24 @@ public class Main {
         s3.addGrade("Math", 'B');
         s3.addGrade("Biology", 'D');
 
-        // Create courses
         Course c1 = new Course("MTH101", "Mathematics");
         Course c2 = new Course("PHY101", "Physics");
 
-        // Enroll students
         c1.enrollStudent(s1);
         c1.enrollStudent(s2);
         c1.enrollStudent(s3);
         c2.enrollStudent(s1);
         c2.enrollStudent(s3);
 
-        // Display enrolled students
         System.out.println("--- Mathematics Course ---");
         c1.displayEnrolledStudents();
 
         System.out.println("--- Physics Course ---");
         c2.displayEnrolledStudents();
 
-        // Drop a student from Mathematics
         System.out.println("Dropping Bob (S102) from Mathematics...");
         c1.dropStudent("S102");
 
-        // Display updated list
         System.out.println("--- Updated Mathematics Course ---");
         c1.displayEnrolledStudents();
 
