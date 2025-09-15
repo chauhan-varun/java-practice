@@ -1,0 +1,77 @@
+1. Client Layer (Users)
+
+Mobile App (React Native)
+
+Migrant workers: health record access, offline sync, consent mgmt.
+
+Doctors: QR scan → quick record access.
+
+Web Portal (Next.js)
+
+CSR (Client-Side Rendering) → interactive dashboards for officials.
+
+SSR (Server-Side Rendering) → secure, SEO-friendly pages for doctors/hospitals.
+
+2. API & Backend Layer
+
+Next.js API Routes (Serverless Functions)
+
+Auth, QR code verification, health record APIs.
+
+Runs on Node.js inside Next.js.
+
+Dedicated Microservices (optional for scale)
+
+Record Sync Service
+
+Notification Service
+
+Consent & Audit Logging
+
+3. Authentication & Security
+
+Aadhaar / Mobile OTP integration
+
+NextAuth.js for session handling (JWT, OAuth2)
+
+Role-based access (Patient / Doctor / Official)
+
+End-to-end encryption (TLS + DB encryption).
+
+4. Data & Storage Layer
+
+Database → MongoDB Atlas / PostgreSQL (encrypted)
+
+Object Storage → AWS S3 / Azure Blob for medical reports
+
+Local DB (SQLite/Realm) → for offline-first mobile sync
+
+5. Sync & Offline Support
+
+Workers update records offline → stored locally → auto-sync to cloud via APIs when online.
+
+Conflict resolution handled in backend.
+
+6. Analytics & Insights
+
+Next.js SSR dashboard for government/NGOs → aggregated migrant worker data.
+
+Charts & maps (Recharts / D3.js) → health trend visualization.
+
+AI-ready → predictive alerts (future scope).
+
+7. Infra & DevOps
+
+Deployment → Vercel / AWS / Azure with Next.js hosting.
+
+Dockerized Microservices (for offline sync & notifications).
+
+CI/CD → GitHub Actions.
+
+Monitoring → CloudWatch / Grafana.
+
+📌 Key Advantage with Next.js CSR + SSR
+
+CSR → Fast, app-like experience for dashboards & patients.
+
+SSR → Secure, pre-rendered health record pages (less load time, reliable in poor connectivity).
