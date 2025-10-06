@@ -1,12 +1,10 @@
 interface Engine {
-
     void startEngine();
 
     void stopEngine();
 }
 
 interface Entertainment {
-
     void playMusic();
 
     void stopMusic();
