@@ -1,0 +1,1 @@
+class DivideByZero extends RuntimeException
