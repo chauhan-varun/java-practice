@@ -1,0 +1,2 @@
+101,Ankit,ankit@mail.com,B.Tech,85.5
+102,Riya,riya@mail.com,M.Tech,91.0
