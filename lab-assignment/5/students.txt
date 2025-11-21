@@ -1,0 +1,5 @@
+101|Rahul Kumar|rahul@mail.com|B.Tech|85.0
+102|Priya Sharma|priya@mail.com|M.Tech|92.5
+103|Amit Patel|amit@mail.com|B.Tech|78.0
+104|Sneha Reddy|sneha@mail.com|MCA|88.5
+105|Rohan Verma|rohan@mail.com|B.Tech|95.0
