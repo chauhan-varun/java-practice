@@ -1,44 +1,35 @@
-class Animal {
-    int age;
-    String name;
-    String color;
-
-    final void getAnimal() {
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
-        System.out.println("Color: " + color);
+class Task1 extends Thread {
+    public void run() {
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Task 1 - Count: " + i);
+            try {
+                Thread.sleep(500); 
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
     }
-
-    void setAnimal(int age, String name, String color) {
-        this.age = age;
-        this.name = name;
-        this.color = color;
-    }
-
 }
 
-class Dog extends Animal {
-
-    // void getAnimal() {
-    // System.out.println("Dog Name: " + name);
-    // System.out.println("Dog Age: " + age);
-    // System.out.println("Dog Color: " + color);
-    // }
-
-    void setAnimal(int age, String name, String color) {
-        this.age = age;
-        this.name = name;
-        this.color = color;
+class Task2 extends Thread {
+    public void run() {
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Task 2 - Count: " + i);
+            try {
+                Thread.sleep(500); 
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
 
 public class Main {
-
     public static void main(String[] args) {
-        Animal a = new Animal();
-        a.getAnimal();
-        Dog dog = new Dog();
-        dog.setAnimal(5, "Buddy", "Brown");
-        dog.getAnimal();
+        Task1 t1 = new Task1();
+        Task2 t2 = new Task2();
+
+        t1.start(); 
+        t2.start(); 
     }
 }

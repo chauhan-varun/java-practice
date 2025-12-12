@@ -14,8 +14,8 @@ public class StudentRecordApp {
         scanner = new Scanner(System.in);
 
         System.out.println("╔════════════════════════════════════════════╗");
-        System.out.println("║  Student Record Management System         ║");
-        System.out.println("║  Dr. Manish Kumar                         ║");
+        System.out.println("║     Student Record Management System       ║");
+        System.out.println("║            Er. Varun Chauhan               ║");
         System.out.println("╚════════════════════════════════════════════╝\n");
 
         boolean running = true;
